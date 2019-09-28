@@ -1,5 +1,6 @@
 
 import React, {Component} from 'react';
+import './MyStyle.css'
 
 class App extends Component {
   constructor(props) {
@@ -24,8 +25,13 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
-        {this.state.data.map(d => <li key={d.firstname}>{d.firstname}{d.lastname}{d.age}</li>)}
+      <div class = "container">
+        <center>
+          <div class = "box">
+            <h1>{this.state.data.map(d => <li key={d.firstname}>{d.firstname}{d.lastname}{d.age}</li>)}
+            </h1>
+          </div>
+        </center>
       </div>
       
 
